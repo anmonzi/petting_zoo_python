@@ -7,65 +7,93 @@ from datetime import date
 
 class Llama:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
-print(miss_fuzz.name)
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Goat:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-lady_goat = Goat("The G.O.A.T", "domestic goat", "morning")
-print(lady_goat.name)
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Donkey:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-donkey = Donkey("Donkey", "domestic donkey", "midday")
-print(donkey.name)
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Pony:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-little_pony = Pony("Princess", "domestic pony", "afternoon")
-print(little_pony.name)
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Alpaca:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
 
-silver_bullet = Alpaca("Silver Bullet", "domestic alpaca", "afternoon")
-print(f"{silver_bullet.name} the {silver_bullet.species} is available to pet during the {silver_bullet.shift} shift.")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"

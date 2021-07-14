@@ -7,64 +7,94 @@ from datetime import date
 
 class Copperhead:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
         self.venomous = True
+        self.food = food
 
-copperhead = Copperhead("Dan", "venomous snake")
-print(f"The copperhead {copperhead.name}, is venomous? {copperhead.venomous}")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class KingCobra:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
         self.venomous = True
+        self.food = food
 
-king_cobra = KingCobra("Slytherin", "venomous snake")
-print(king_cobra.venomous)
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class RatSnake:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
         self.venomous = False
+        self.food = food
 
-rat_snake = RatSnake("Basil", "non-venomous snake")
-print(rat_snake.slithering)
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class GiantAnaconda:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
         self.venomous = False
+        self.food = food
 
-anaconda = GiantAnaconda("Jafaar", "boa constrictor")
-print(anaconda.species)
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Cottonmouth:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
         self.venomous = True
+        self.food = food
 
-cottonmouth = Cottonmouth("Medusa", "venomous snake")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+

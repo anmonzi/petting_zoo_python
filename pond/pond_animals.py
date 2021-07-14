@@ -7,61 +7,94 @@ from datetime import date
 
 class Goldfish:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
         self.venomous = False
+        self.food = food
 
-goldfish = Goldfish("Milo", "fish")
-print(f"The goldfish {goldfish.name}, is venomous? {goldfish.venomous}")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Stonefish:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
         self.venomous = True
+        self.food = food
 
-stonefish = Stonefish("Fluffy", "venomous fish")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Mallard:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
         self.venomous = False
+        self.food = food
 
-mallard = Mallard("Ricky", "bird")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class BlueRingedOctopus:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
         self.venomous = True
+        self.food = food
 
-octopus = BlueRingedOctopus("Atlantis", "octopus")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class BoxJellyfish:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the propertis of each animal with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
         self.venomous = True
+        self.food = food
 
-jellyfish = BoxJellyfish("Angel", "jellyfish")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+

@@ -1,6 +1,7 @@
 from petting_area import Llama, Goat, Donkey, Pony, Alpaca
 from glass_tank import Copperhead, KingCobra, RatSnake, GiantAnaconda, Cottonmouth
 from pond import Goldfish, Stonefish, Mallard, BlueRingedOctopus, BoxJellyfish
+from attractions import PettingZoo, SnakePit, Wetlands
 
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
@@ -19,6 +20,39 @@ mallard = Mallard("Ricky", "bird", "seeds and roots")
 octopus = BlueRingedOctopus("Atlantis", "octopus", "small crabs and shrimp")
 jellyfish = BoxJellyfish("Angel", "jellyfish", "worms and shrimp")
 
-print(little_pony)
-print(miss_fuzz)
-print(cottonmouth)
+
+varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")
+slither_inn = SnakePit("Slither Inn", "slithering and creepy critters to gaze at")
+critter_cove = Wetlands("Critter Cove", "water loving critters in the wetlands")
+
+varmint_village.animals.append(miss_fuzz)
+varmint_village.animals.append(lady_goat)
+varmint_village.animals.append(donkey)
+varmint_village.animals.append(little_pony)
+varmint_village.animals.append(silver_bullet)
+slither_inn.animals.append(copperhead)
+slither_inn.animals.append(king_cobra)
+slither_inn.animals.append(rat_snake)
+slither_inn.animals.append(anaconda)
+slither_inn.animals.append(cottonmouth)
+critter_cove.animals.append(goldfish)
+critter_cove.animals.append(stonefish)
+critter_cove.animals.append(mallard)
+critter_cove.animals.append(octopus)
+critter_cove.animals.append(jellyfish)
+
+print(f"{varmint_village.attraction_name} is where you'll find {varmint_village.description}, like")
+for animal in varmint_village.animals:
+    print(f"*{animal.name} the {animal.species}")
+
+print("--------------------------------")
+
+print(f"{slither_inn.attraction_name} is where you'll find {slither_inn.description}, like")
+for animal in slither_inn.animals:
+    print(f"*{animal.name} the {animal.species}")
+
+print("--------------------------------")
+
+print(f"{critter_cove.attraction_name} is where you'll find {critter_cove.description}, like")
+for animal in critter_cove.animals:
+    print(f"*{animal.name} the {animal.species}")

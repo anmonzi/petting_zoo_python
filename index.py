@@ -4,7 +4,7 @@ from pond import Goldfish, Stonefish, Mallard, BlueRingedOctopus, BoxJellyfish
 from attractions import PettingZoo, SnakePit, Wetlands
 
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow", 563154874)
 lady_goat = Goat("The G.O.A.T", "domestic goat", "morning", "cracked corn")
 donkey = Donkey("Dwayne", "domestic donkey", "midday", "hay and oats")
 little_pony = Pony("Princess", "domestic pony", "afternoon", "hay and oats")
@@ -41,18 +41,6 @@ critter_cove.animals.append(mallard)
 critter_cove.animals.append(octopus)
 critter_cove.animals.append(jellyfish)
 
-print(f"{varmint_village.attraction_name} is where you'll find {varmint_village.description}, like")
-for animal in varmint_village.animals:
-    print(f"*{animal.name} the {animal.species}")
-
-print("--------------------------------")
-
-print(f"{slither_inn.attraction_name} is where you'll find {slither_inn.description}, like")
-for animal in slither_inn.animals:
-    print(f"*{animal.name} the {animal.species}")
-
-print("--------------------------------")
-
-print(f"{critter_cove.attraction_name} is where you'll find {critter_cove.description}, like")
-for animal in critter_cove.animals:
-    print(f"*{animal.name} the {animal.species}")
+print(varmint_village.last_critter_added)
+print(slither_inn.last_critter_added)
+print(critter_cove.last_critter_added)

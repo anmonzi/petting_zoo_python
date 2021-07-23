@@ -2,7 +2,7 @@ from animals import Animal, Llama, Goat, Pony, Donkey, Alpaca, StoneFish, RatSna
 from attractions import Wetlands, PettingZoo, SnakePit
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow", 563154874)
-lady_goat = Goat("The G.O.A.T", "domestic goat", "morning", "cracked corn", 563175869)
+lady_goat = Goat("Suzy", "domestic goat", "morning", "cracked corn", 563175869)
 donkey = Donkey("Dwayne", "domestic donkey", "midday", "hay and oats", 896471258)
 little_pony = Pony("Princess", "domestic pony", "afternoon", "hay and oats", 846325987)
 silver_bullet = Alpaca("Silver Bullet", "domestic alpaca", "afternoon", "mixed fruit and nuts", 876325984)
@@ -26,7 +26,7 @@ varmint_village.add_animal(miss_fuzz)
 varmint_village.add_animal(lady_goat)
 varmint_village.add_animal(donkey)
 varmint_village.add_animal(little_pony)
-varmint_village.add_animal(silver_bullet)
+varmint_village.add_animal(donkey)
 slither_inn.add_animal(copperhead)
 slither_inn.add_animal(king_cobra)
 slither_inn.add_animal(rat_snake)
@@ -37,13 +37,3 @@ critter_cove.add_animal(stonefish)
 critter_cove.add_animal(mallard)
 critter_cove.add_animal(octopus)
 critter_cove.add_animal(jellyfish)
-
-# print(varmint_village.last_critter_added)
-# print(slither_inn.last_critter_added)
-for animal in critter_cove.animals:
-    print(animal)
-
-critter_cove.remove_animal(jellyfish)
-print("-------------")
-for animal in critter_cove.animals:
-    print(animal)

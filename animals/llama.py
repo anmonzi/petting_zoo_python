@@ -11,6 +11,7 @@ class Llama(Animal, Walking):
         Walking.__init__(self)
         # Establish the different propertis of each animal with a default value
         self.shift = shift  # stays on because not all animals have shifts
+        self.walk_speed = 5
 
     def feed(self):
         print(f'on {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')

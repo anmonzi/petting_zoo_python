@@ -1,9 +1,11 @@
 from animals import Animal
+from movements import Walking
 
-class Pony(Animal):
+
+class Pony(Animal, Walking):
 
     def __init__(self, name, species, shift, food, chip_number):
-        super().__init__(name, species, food, chip_number)
+        Animal.__init__(self, name, species, food, chip_number)
+        Walking.__init__(self)
         # Establish the propertis of each animal with a default value
-        self.walking = True
         self.shift = shift # stays on because not all animals have shifts
